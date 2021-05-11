@@ -2,19 +2,14 @@
 
 {% block content %}
 <div class="container">
-    <div class="row">
-    {%for x in requête%}
-        <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img src="{{x.image_url}}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">{{x.titre}}</h5>
-                    <p class="card-text">{{x.description}}</p>
-                    <a href="#" class="btn btn-primary">Lancer la requête</a>
-                </div>
-            </div>
-        </div>
-    {% endfor %}
-        </div>
+    <form action=" http://127.0.0.1:8000/register">
+        <input type="submit" value="S'enregistrer"/>
+    </form>
+    <form action=" http://127.0.0.1:8000/register_epidemiologiste">
+        <input type="submit" value="S'enregistrer en tant que épidémiologiste"/>
+    </form>
+    <form action=" http://127.0.0.1:8000/login">
+        <input type="submit" value="Se connecter"/>
+    </form>
 </div>
 {% endblock %}

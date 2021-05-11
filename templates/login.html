@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<h3>Se Connecter</h3>
+<form method="POST" action="">
+    {% csrf_token %}
+    {% for field in form %}
+        {{field.label}}
+        {{field}}
+    {% endfor %}
+    <input type="submit" name="Connection">
+</form>
+</body>
+</html>
