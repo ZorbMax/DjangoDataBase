@@ -20,3 +20,7 @@ class RegisterFormEpidemio(forms.Form):
 class LoginForm(forms.Form):
     pseudo = forms.CharField(label='Pseudo', max_length=20)
     mdp = forms.CharField(label='Mot de passe', widget=forms.PasswordInput(),max_length=20)
+
+
+class SQLForm(forms.Form):
+    SQL = forms.CharField(label='Requête')

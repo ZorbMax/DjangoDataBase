@@ -7,5 +7,6 @@ urlpatterns=[
     path('register_epidemiologiste/',views.register_epidemiologiste),
     path('login/',views.login),
     path('utilisateur/',views.user),
-    path('epidemiologiste/',views.epidemio)
+    path('epidemiologiste/',views.epidemio),
+    path('logout/',views.logout)
 ]

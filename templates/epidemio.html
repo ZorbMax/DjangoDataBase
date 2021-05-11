@@ -5,6 +5,28 @@
     <title>Epidemiologiste</title>
 </head>
 <body>
-yo je suis un epidemiologiste
+Voici votre code uuid : {{uuid}}
+<h3>Requête SQL</h3>
+<form method="POST" action="">
+    {% csrf_token %}
+    <label for="SQL">Requête:</label>
+    <input type="text" id="SQL" name="SQL" size="160"><br><br>
+    <input type="submit" name="Requête">
+</form>
+<table style="width:100%">
+    {% for i in table %}
+    <tr>
+        {% for j in i %}
+            <th>  {{j}}  </th>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>
+
+{{reponse}}
+
+<form action=" http://127.0.0.1:8000/logout">
+    <input type="submit" value="Se déconnecter"/>
+</form>
 </body>
 </html>

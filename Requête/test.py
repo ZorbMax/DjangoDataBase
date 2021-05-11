@@ -1,0 +1,1 @@
+print('datetime.date(2020, 4, 2)'.split('(')[1][:-1])
